@@ -8,6 +8,19 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
+    <script>
+    var i = 0;
+    var txt = 'enigmatology';
+    var speed = 100;
+
+    window.onload = function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("header").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
 
 li {
   float: left;
