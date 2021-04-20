@@ -1,5 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <head>
 <h1>Universe Infinity</h1>
 <h2>Welcome to Universe Infinity, the most modern space website.</h2>
+  </head>
+  <body>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<style>
+button {
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 20px;
+}
+button:hover {
+    cursor: pointer !important;
+}
+</style>
+  
+  </body>
+
 </html>
